@@ -1,5 +1,7 @@
 # Athenous Skills Catalogue
 
+Version 0.3.0. Each linked Skill now includes a copy/paste starter prompt, execution checklist, output contract, example invocation and quality check. See the [installation and usage guide](../README.md).
+
 | Category | Skill | Directory |
 |---|---|---|
 | Marketing strategy | Marketing Strategy Planner | [`marketing-strategy`](../skills/marketing-strategy/SKILL.md) |
