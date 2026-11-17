@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0
+- Rewrote all 50 Skill workflows with distinct domain-specific inputs, steps and deliverables.
+- Added task-specific quality gates for strategy, social content, paid media, analytics, SEO and agency operations.
+- Strengthened evidence handling, uncertainty disclosure, client isolation and explicit approval boundaries.
+- Updated repository documentation to describe the specialized workflow model.
+
 ## 0.1.0
 - Initial draft catalogue of 50 AI marketing Skills.
-- Added shared MCP discovery, security, and confirmation guidance.
+- Added shared MCP discovery, security and confirmation guidance.
