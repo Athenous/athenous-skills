@@ -1,0 +1,30 @@
+name: Validate Skills
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Validate Skill frontmatter
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re, sys
+          errors=[]
+          for f in sorted(Path("skills").glob("*/SKILL.md")):
+              s=f.read_text(encoding="utf-8")
+              if not s.startswith("---\n") or s.count("---") < 2:
+                  errors.append(f"{f}: invalid frontmatter")
+                  continue
+              fm=s.split("---",2)[1]
+              n=re.search(r"(?m)^name:\s*([a-z0-9-]+)\s*$",fm)
+              d=re.search(r"(?m)^description:\s*.+$",fm)
+              if not n or n.group(1)!=f.parent.name: errors.append(f"{f}: name mismatch")
+              if not d: errors.append(f"{f}: missing description")
+          if len(list(Path("skills").glob("*/SKILL.md"))) != 50: errors.append("Expected exactly 50 Skills")
+          if errors: print("\n".join(errors)); sys.exit(1)
+          print("Validated 50 Skills")
+          PY
