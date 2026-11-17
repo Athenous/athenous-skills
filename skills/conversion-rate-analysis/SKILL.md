@@ -51,6 +51,50 @@ If evidence is incomplete, provide a scoped analysis and list what cannot be con
 - Report missingness, tracking changes and uncertainty prominently.
 - Tie recommendations to a decision, not just a metric movement.
 
+
+
+## Ready-to-use workflow
+
+### Copy/paste prompt
+
+```text
+Apply conversion-rate-analysis to [business/client]. Desired outcome: [goal]. Audience: [who will use the result]. Period/scope: [dates]. Context and constraints: [brief]. Evidence: [paste exports, URLs, examples]. Check: event definitions; sessions/users; stage counts; device/source/segment; period; tracking; page/form samples. Ask only one blocking question if necessary; otherwise state assumptions and complete the deliverables. Cite source data where possible and do not invent results.
+```
+
+### Execution checklist
+
+1. Confirm the audience, business objective, scope and decision this work should enable.
+2. Review supplied evidence; check source, freshness, coverage, definitions and constraints.
+3. Execute the specialized workflow above in sequence and show the reasoning behind material choices.
+4. Rank outputs by business value, confidence, effort and risk; identify trade-offs and dependencies.
+5. Provide a practical handoff: owner, next step, timing and validation measure. Clearly label assumptions and unknowns.
+
+### Output contract
+
+Start with a concise recommendation, followed by:
+
+- **Funnel table:** include a usable artifact, rationale and next action.
+- **segment diagnosis:** include a usable artifact, rationale and next action.
+- **opportunity range:** include a usable artifact, rationale and next action.
+- **friction hypotheses:** include a usable artifact, rationale and next action.
+- **experiment backlog.:** include a usable artifact, rationale and next action.
+
+Include scope, sources, assumptions, limitations and next steps. Use structured tables where they improve actionability. Mark missing information **Not provided**; do not fabricate metrics, customer statements or outcomes.
+
+### Example invocation
+
+```text
+Use conversion-rate-analysis for [client/project]. The audience is [audience], and the objective is [objective]. Use these materials: [inputs]. Produce the full deliverables in a format I can hand to my team/client, with priorities and open questions.
+```
+
+### Quality check
+
+- Define formulas, denominators, units, time zones and attribution windows.
+- Compare like-for-like periods, cohorts and segments.
+- Distinguish platform attribution, blended business outcomes and causal incrementality.
+- Report missingness, tracking changes and uncertainty prominently.
+- Tie recommendations to a decision, not just a metric movement.
+
 ## Athenous MCP usage
 
 MCP is optional. If connected, discover actual reporting and analytics tools and exact schemas at runtime. Use only authorized workspaces and verified data fields; never assume metrics or integrations exist. Keep client data isolated. If a data source is unavailable, use supplied exports and disclose the gap.
