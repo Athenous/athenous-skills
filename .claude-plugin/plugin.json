@@ -1,0 +1,9 @@
+{
+  "name": "athenous-marketing-skills",
+  "version": "0.3.0",
+  "description": "50 practical AI marketing workflows for strategy, social media, paid advertising, analytics, SEO and agency operations.",
+  "author": {
+    "name": "Athenous"
+  },
+  "repository": "https://github.com/Athenous/athenous-skills"
+}

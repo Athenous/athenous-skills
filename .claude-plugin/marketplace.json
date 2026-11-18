@@ -1,0 +1,17 @@
+{
+  "name": "athenous-skills",
+  "owner": {
+    "name": "Athenous"
+  },
+  "metadata": {
+    "description": "Practical AI marketing Skills for agencies, marketers and campaign managers.",
+    "version": "0.3.0"
+  },
+  "plugins": [
+    {
+      "name": "athenous-marketing-skills",
+      "source": "./",
+      "description": "50 ready-to-use marketing workflows with prompts, checklists, output contracts and optional Athenous MCP guidance."
+    }
+  ]
+}
