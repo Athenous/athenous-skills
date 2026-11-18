@@ -80,6 +80,28 @@ Athenous MCP is a separate data and action connection. Connect it using the curr
 - Before publishing, changing budgets, editing campaigns, inviting users or performing another consequential write, show the exact proposed action and obtain explicit confirmation.
 - Never put API keys, tokens or passwords in Skill files.
 
+## Requirements
+
+To get started, you need:
+
+- An AI assistant that supports Skills, such as [Claude](https://claude.ai/), [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview), [Cursor](https://cursor.com/), or another compatible agent.
+- For live marketing account data: an [Athenous account](https://app.athenous.io/) and the [Athenous MCP connection](https://mcp.athenous.io/mcp), with the relevant advertising or social accounts connected and authorized.
+- No Athenous MCP connection is required to use the Skills with pasted exports, uploaded reports, URLs or other information you provide manually.
+
+The exact subscription or plan required depends on the AI client and its current Skills support. Check the provider's current requirements.
+
+---
+
+## Support
+
+The Athenous Skills collection is **free to access**.
+
+Need help? Contact us at [**contact@athenous.io**](mailto:contact@athenous.io).
+
+Learn more about [Athenous](https://athenous.io/).
+
+---
+
 ## Catalogue
 
 Version **0.3.0** contains 50 Skills across five categories. See [the full catalogue](docs/catalogue.md) and [catalogue.json](catalogue.json).
@@ -108,4 +130,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidance and [SECURITY.m
 
 ## License
 
-No license has been selected for this repository yet. Until an approved license is added, do not assume the content is licensed for redistribution or commercial reuse.
+The Skills are provided at no charge. **No repository license has been selected yet**, so do not assume permission to redistribute, relicense or commercially republish the content.
